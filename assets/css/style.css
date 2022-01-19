@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+/*-----------------*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    padding-left: 2rem;
+}
+
+.menu--lista{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.item--lista, .menu--item{
+    list-style: none;
+    text-decoration: none;
+    color: #808080;
+    margin-right: 1.25rem;
+    text-transform: lowercase;
+}
+
+.item--lista a.ativo{
+    color: #333333;
+    font-weight: bold;
+}
+
+.menu--lista:last-child a{
+    margin-right:  0;
+}
+
+.menu--lista a:hover{
+    text-decoration: underline;
+}
+
+.banner--imagem{
+    width: 100%;
+    height: calc(100vh - 75px);
+}
+
+.titulo{
+    font-family: 'Pacifico', cursive;
+    color: whitesmoke;
+    font-weight: 400;
+    font-size: 5.0625rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    text-shadow: 0 4px 4px rgba(0,0,0,0.75);
+    width: 100%;
+}
+
+.subtitulo{
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    color: #8D0606;
+    text-align: center;
+    font-size: 51px;
+    /* margin-top: 19px; */
+    padding-top: 2.5rem;
+    /* font-weight: 100; */
+}
+
+.paragrafo{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    color: #696969;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.receitas{
+    background-color: #e5e5e5;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem 0 0 5rem;
+    border-radius: 5px;
+}
+
+.receita{
+    background-color: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    margin-right: 5rem;
+    width: calc(25% - 5rem);
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+}
+
+.receita__imagem{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.receita__titulo{
+    margin-top: 5px;
+    font-size: 1.3rem;
+    font-weight: 100;
+    padding: 10px;
+}
+
+.receita__descricao{
+    color: lightslategray;
+    padding: 10px;
+}
+
+.receita__botao{
+    background-color: #8D0606;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    padding: 6px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.receita__botao:hover{
+    cursor: pointer;
+    background-color: #9b1313;
+}
